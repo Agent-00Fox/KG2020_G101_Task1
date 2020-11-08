@@ -1,0 +1,8 @@
+package Little.Blue.Fox;
+
+        import java.awt.*;
+
+public interface Drawable {
+    void draw(Graphics2D g);
+
+}
