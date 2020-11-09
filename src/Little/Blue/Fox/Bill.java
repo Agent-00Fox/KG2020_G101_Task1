@@ -85,13 +85,13 @@ public class Bill implements Drawable {
         g.setColor(Color.black); // Бабочка.
         Polygon bTieRight = new Polygon();
         Polygon bTieLeft = new Polygon();
-        bTieRight.addPoint(x, y+110);
-        bTieRight.addPoint(x-20, y+100);
-        bTieRight.addPoint(x-20, y+120);
-        g.fillPolygon(bTieRight);
         bTieLeft.addPoint(x, y+110);
-        bTieLeft.addPoint(x+20, y+100);
-        bTieLeft.addPoint(x+20, y+120);
+        bTieLeft.addPoint(x-20, y+100);
+        bTieLeft.addPoint(x-20, y+120);
         g.fillPolygon(bTieLeft);
+        bTieRight.addPoint(x, y+110);
+        bTieRight.addPoint(x+20, y+100);
+        bTieRight.addPoint(x+20, y+120);
+        g.fillPolygon(bTieRight);
     }
 }
